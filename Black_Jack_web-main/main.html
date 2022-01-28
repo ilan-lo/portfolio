@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="./main.css" >
+</head>
+<body>
+    <div id="tout">
+        <div id="titre">
+            <h1>Black Jack</h1>
+        </div>
+        <div id="table">
+            <div class ="part" id="top">
+                <div id="dealer_txt">
+                    Dealer
+                </div>
+                <div class="card" id="dealer_card">
+                    <img class="photo" id="photoD0" src="card/cardback.svg">
+                    <img class="photo" id="photoD1" src="">
+                    <img class="photo" id="photoD2" src="">
+                    <img class="photo" id="photoD3" src="">
+                    <img class="photo" id="photoD4" src="">
+                    <img class="photo" id="photoD5" src="">
+                </div>
+                <div class="value" id="dealer_v">
+                    <p>Value:</p>
+                    <p id="dealer_value">0</p>
+                </div>
+
+            </div>
+            <div class="part" id="mid">
+                <h2 id="result">Entrez vos jetons<br>puis appuyez sur ENTRER<br><i>si premiere fois recommandé:100</i></h2>
+                <!--COMPARTIMENT NOMBRE-->
+                <div id="compartimentNombre">
+                    <input type="number" placeholder="Entrez votre mise" id="in"
+                    onKeyPress="if(event.keyCode == 13)fonctionmise()" id="NombreEntre">
+                </div>
+                <div id="compartimentNombre2">
+                    <input type="number" placeholder="Entrez vos jetons" id="in2"
+                    onKeyPress="if(event.keyCode == 13)fonctionchips()" id="NombreEntre2">
+                </div>
+                <div class="bouton" id="Rejouer">
+                    Rejouer?
+                </div>
+            </div>
+            <div class="part" id="bot">
+                <div class="coin" id="stack">
+                    Jetons:<br><strong id="chips"></strong>
+                </div>
+                <div class="card" id="player_card">
+                    <img class="photo" id="photoP0" src="card/cardback.svg">
+                    <img class="photo" id="photoP1" src="card/cardback.svg">
+                    <img class="photo" id="photoP2" src="">
+                    <img class="photo" id="photoP3" src="">
+                    <img class="photo" id="photoP4" src="">
+                    <img class="photo" id="photoP5" src="">
+                </div>
+                <div class="value" id="player_v">
+                    <p>Value:</p>
+                    <p id="player_value">0</p>
+                </div>
+                <div class="bouton" id="Hit">
+                    Hit
+                </div>
+                <div class="bouton" id="Stay">
+                    Stay
+                </div>
+                <div class="bouton" id="Double">
+                    Double
+                </div>     
+            </div>
+        </div>
+    </div>
+    <script src="card.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolidSnake</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js" type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        <b>Deplacez vous avec les fleches[HAUT]&[BAS], Tirez avec fleche[DROITE]</b>
+    </div>
+    <div>Vous devez detruire les enemies avant qu'ils ne vous atteignent <br><strong id="replay">Tirez sur les enemies!</strong><br>nombre de vies perdues : <b id="numbertries">0</b></div>
+    <div>Vous avez tué <b id="number">0</b> enemies</div>
+    <div class="part" id="part1">
+        <img class="photo" id="photo0" src="img/solid_snake_rogned.png"
+            onclick="check(0)">
+        <img class="photo" id="photo1" src="./img/transparent.png">
+        <img class="photo" id="photo2" src="./img/transparent.png">
+        <img class="photo" id="photo3" src="./img/transparent.png">
+        <img class="photo" id="photo4" src="./img/transparent.png">
+        <img class="photo" id="photo5" src="./img/transparent.png">
+        <img class="photo" id="enemy0" src="./img/transparent.png">
+    </div>
+    <div class="part" id="part2">
+        <img class="photo" id="photo6" src="./img/transparent.png"
+            onclick="check(6)">
+        <img class="photo" id="photo7" src="./img/transparent.png">
+        <img class="photo" id="photo8" src="./img/transparent.png">
+        <img class="photo" id="photo9" src="./img/transparent.png">
+        <img class="photo" id="photo10" src="./img/transparent.png">
+        <img class="photo" id="photo11" src="./img/transparent.png">
+        <img class="photo" id="enemy1" src="./img/transparent.png">
+    </div>
+    <div class="part" id="part3">
+        <img class="photo" id="photo12" src="./img/transparent.png"
+            onclick="check(12)">
+        <img class="photo" id="photo13" src="./img/transparent.png">
+        <img class="photo" id="photo14" src="./img/transparent.png">
+        <img class="photo" id="photo15" src="./img/transparent.png">
+        <img class="photo" id="photo16" src="./img/transparent.png">
+        <img class="photo" id="photo17" src="./img/transparent.png">
+        <img class="photo" id="enemy2" src="./img/transparent.png">
+    </div>
+    <div class="part" id="part4">
+        <img class="photo" id="photo18" src="./img/transparent.png"
+            onclick="check(18)">
+        <img class="photo" id="photo19" src="./img/transparent.png">
+        <img class="photo" id="photo20" src="./img/transparent.png">
+        <img class="photo" id="photo21" src="./img/transparent.png">
+        <img class="photo" id="photo22" src="./img/transparent.png">
+        <img class="photo" id="photo23" src="./img/transparent.png">
+        <img class="photo" id="enemy3" src="./img/transparent.png">
+    </div>
+</body>

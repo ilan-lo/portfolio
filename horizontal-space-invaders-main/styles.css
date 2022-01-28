@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    background: url(./img/background.gif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    
+}
+.part {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.photo{
+    width: 140px;
+    height: 140px;
+}
+
+
+
+@media(max-width:1000px ){
+    .photo{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media(max-width:350px){
+    .photo{
+        width : 50px;
+        height: 50px;
+    }
+}

@@ -1,0 +1,27 @@
+#body{
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+}
+.part {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.photo{
+    width: 10%;
+}
+
+
+@media(max-width:1000px ){
+    .photo{
+        width: 100px;
+    }
+}
+
+@media(max-width:350px){
+    .photo{
+        width : 50px;
+    }
+}
